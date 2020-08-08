@@ -40,18 +40,18 @@ test("gets enemy's health value", () => {
     expect(enemy.getAttackValue()).toBeLessThanOrEqual(15);
   });
   
-  test("subtracts from enemy's health", () => {
-    const enemy = new Enemy('goblin', 'sword');
-    const oldHealth = enemy.health;
+//   test("subtracts from enemy's health", () => {
+//     const enemy = new Enemy('goblin', 'sword');
+//     const oldHealth = enemy.health;
   
-    enemy.reduceHealth(5);
+//     enemy.reduceHealth(5);
   
-    expect(enemy.health).toBe(oldHealth - 5);
+//     expect(enemy.health).toBe(oldHealth - 5);
   
-    enemy.reduceHealth(99999);
+//     enemy.reduceHealth(99999);
   
-    expect(enemy.health).toBe(0);
-  });
+//     expect(enemy.health).toBe(0);
+//   });
 
   test('gets description of the enemy', () => {
       const enemy = new Enemy('goblin', 'sword');
